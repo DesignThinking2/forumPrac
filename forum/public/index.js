@@ -8,7 +8,7 @@ $(document).ready(function () {
     .then((res) => {
       if (res.data) {
         $(".userLogin").empty()
-        $(".userLogin").append(`<h3>用户名：</h3><h3 class="yonghuming">${res.data.userName}</h3>`)
+        $(".userLogin").append(`<h3 class="yonghuming">${res.data.userName}</h3>`)
         $(".userLogin").append('<a class="tuichudenglu" onclick="tuichu()">退出</a>')
         isLoginPage = true
       }
@@ -50,7 +50,7 @@ $(document).ready(function () {
           $(".box_bg").fadeOut(100);
           $(".box_lg").hide(100);
           $(".userLogin").empty()
-          $(".userLogin").append(`<h3>用户名：</h3><h3 class="yonghuming">${response.data.userInfo.uid}</h3>`)
+          $(".userLogin").append(`<h3 class="yonghuming">${response.data.userInfo.uid}</h3>`)
           $(".userLogin").append('<a class="tuichudenglu" onclick="tuichu()">退出</a>')
           isLoginPage = true
         } else {
@@ -102,7 +102,7 @@ $(document).ready(function () {
         <div class="post-comment">
           <div class="comment-title">
             <h3>评论内容：</h3>
-            <a href="javascript:void(0)"  onclick="fabiaopinglun(${post[i].postId})" id="commentPostId${post[i].postId}">发表评论</a>
+            <a href="javascript:void(0)"  onclick="fabiaopinglun(${post[i].postId})" id="commentPostId${post[i].postId}" style="color: skybule">发表评论</a>
           </div>
           <div class="comment-content">
           </div>
@@ -222,7 +222,7 @@ function btnLogin() {
 
 function tuichu() {
   $(".userLogin").empty()
-  $(".userLogin").append('<a href="javascript:void(0)" id="login_click" onclick="btnLogin()">登录</a>')
+  $(".userLogin").append('<a href="javascript:void(0)" id="login_click" onclick="btnLogin()" style="color:black; font-size: large;">登录</a>')
   isLoginPage = false
   axios.get('/users/quitLogin')
     .then((res) => {
