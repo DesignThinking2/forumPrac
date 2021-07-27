@@ -9,58 +9,61 @@
   <script src="./jquery.min.js"></script>
   <link rel="stylesheet" href="./style.css">
   <script src="./index.js"></script>
-  <title>论坛</title>
+  <title>AIlearning</title>
 </head>
 
 <body>
   <div class="page">
     <div class="header">
-      <h1 class="brand">JavaWeb作业</h1>
+      <h1 class="brand">AIlearning</h1>
       <div class="serach">
-        <input type="text">
+
+        <input type="text" style="border-radius: 40px;height: 30px;width: 450px;">
       </div>
       <div class="userLogin">
-        <a href="javascript:void(0)" id="login_click" onclick="btnLogin()">登录</a>
+        <a href="javascript:void(0)" id="login_click" onclick="btnLogin()" style="color:black; font-size: large;">登录</a>
+
       </div>
     </div>
     <div class="content">
       <div class="top-content">
         <ol>
-          <li class="liOn">技术</li>
-          <li>新闻</li>
-          <li>趣事</li>
-          <li><a href="javascript:void(0)" class="fatie">发帖</a></li>
+          <li class="liOn">customization</li>
+          <li>visualized map</li>
+          <li></li>
+          <li><a href="javascript:void(0)" class="fatie">express</a></li>
         </ol>
       </div>
       <div class="mid-content">
       </div>
     </div>
-    <div class="footer">底部</div>
+    <div class="footer">DataScience and engineering</div>
     <div class="box_lg">
       <div class="box_tit">
-        <a class="close" href="#">×</a>
-        <h3 class="LoginView">登录账号</h3>
-        <h3 class="regView">注册账号</h3>
+        <a class="close" href="#" style="margin-left:400px; color: black;" >×</a>
+        <h3 class="LoginView" style="text-align: center; font-size:x-large;">login</h3>
+        <h3 class="regView" style="text-align: center; font-size:x-large;">register</h3>
       </div>
       <div class="box_cont">
         <form class="box_frm LoginView" id="denglu">
           <ol>
-            <li><input type="text" class="iptUid" placeholder="帐号" id="iptUid" /></li>
-            <li><input type="pwd" class="iptName" placeholder="密码" id="iptName" /></li>
+            <li><input type="text" class="iptUid input-normal" placeholder="帐号" id="iptUid" /></li>
+            <li><input type="password" class="iptName input-normal" placeholder="密码" id="iptName" /></li>
             <li><input type="button" value="登录" class="btn btn-primary btn_frm" id="login_btn"></li>
           </ol>
         </form>
         <form class="box_frm regView" id="zhuce">
             <ol>
-              <li><input type="text" class="iptUid" placeholder="帐号" id="riptUid" /></li>
-              <li><input type="pwd" class="iptName" placeholder="密码" id="riptName" /></li>
+              <li><input type="text" class="iptUid input-normal" placeholder="帐号" id="riptUid" /></li>
+              <li><input type="password" class="iptName input-normal" placeholder="密码" id="riptName" /></li>
               <li><input type="button" value="注册" class="btn btn-primary btn_frm" id="reg_btn"></li>
             </ol>
           </form>
       </div>
       <div class="box_ft">
-        <input type="checkbox" style="margin-right: 8px" class="LoginView"><label class="LoginView">下次自动登录</label>
-        <a href="javascript:void(0)" id="lijizhuce" class="LoginView">立即注册</a>
+        <br><input type="checkbox" style="margin-left: 140px;size: 8px;" class="LoginView">
+        <label class="LoginView">下次自动登录</label><br>
+        <a href="javascript:void(0)" id="lijizhuce" class="LoginView" style="margin-left: 170px;color: chocolate;">立即注册</a>
       </div>
     </div>
     <div class="box_bg"></div>
@@ -68,9 +71,9 @@
       <a href="#" class="close_boxPost">×</a>
       <form class="fabiao_post">
         <ol>
-          <li><input type="text" class="ipt_post" placeholder="请输入标题" id="ipt_post" /></li>
-          <li><textarea class="post_neirong" cols="30" rows="10" placeholder="请输入内容" style="margin-top:10px;"></textarea></li>
-          <li><input type="button" value="发表" class="btn_publishPost"></li>
+          <li><input type="text" class="ipt_post input-post-title" placeholder="请输入标题" id="ipt_post" /></li>
+          <li><textarea class="post_neirong input-post-content" cols="30" rows="10" placeholder="请输入内容" style="margin-top:5px;"></textarea></li>
+          <li><input type="button" value="发表" class="btn_publishPost btn-primary"></li>
         </ol>
       </form>
     </div>
@@ -78,9 +81,9 @@
       <a href="#" class="close_boxComment">×</a>
       <form class="fabiao_comment">
         <ol>
-          <li>输入评论内容：</li>
-          <li><textarea class="comment_neirong" cols="30" rows="10" placeholder="请输入评论内容" style="margin-top:10px;"></textarea></li>
-          <li><input type="button" value="发表" class="btn_publishComment"></li>
+          <h1 style="text-align: center; margin-top: 10px;">comment:</h1>
+          <li><textarea class="comment_neirong input-comment-content" cols="30" rows="10" placeholder="请输入评论内容" style="margin-top:10px;"></textarea></li>
+          <li><input type="button" value="发表" class="btn_publishComment btn-primary"></li>
         </ol>
       </form>
     </div>

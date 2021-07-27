@@ -29,9 +29,14 @@ input,label{
 .userLogin {
   display: flex;
   flex-wrap: nowrap;
+  border-radius: 15px;
+  /* background-color:darkorange; */
+  width: 140px;
+  height: 30px;
 }
 .tuichudenglu {
-  width: auto;
+  height: 35px;
+  font-size: small;
   background-color: rgb(0, 182, 228);
   border-radius: 5px;
   padding: 3px 5px;
@@ -69,11 +74,13 @@ input,label{
   width: 90%;
   padding: 20px;
   margin: 20px auto;
-  background-color: rgb(224, 224, 224);
+  background-color:rgb(232, 236, 222);
+  border-radius: 10px;
 }
 .post-comment {
   width: 100%;
   background-color: #f4f4f4;
+  border-radius: 10px;
 }
 .comment-title {
   width: 100%;
@@ -87,15 +94,19 @@ input,label{
   background-color: rebeccapurple;
 }
 .box_lg {
-  width: 200px;
-  height: 150px;
-  position: fixed;
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
   margin-left: -100px;
-  background-color: rgb(209, 209, 209);
+  background-color: bisque;
   z-index: 10;
   display: none;
+  opacity: 0.9;
+  border-radius: 40px;
+
 }
 .regView {
   display: none;
@@ -111,34 +122,118 @@ input,label{
   display: none;
 }
 .box_post {
-  width: 300px;
-  height: 250px;
-  position: fixed;
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  margin-left: -150px;
-  background-color: rgb(209, 209, 209);
+  margin-left: -100px;
+  background-color: bisque;
   z-index: 10;
-  text-align: center;
   display: none;
+  opacity: 0.9;
+  border-radius: 10px;
 }
 .close_boxPost {
-  position: relative;
-  left: -140px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 95%;
+  top: 5%;
 }
 .box_comment {
-  width: 300px;
-  height: 250px;
-  position: fixed;
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  margin-left: -150px;
-  background-color: rgb(209, 209, 209);
+  margin-left: -100px;
+  background-color: bisque;
   z-index: 10;
-  text-align: center;
   display: none;
+  opacity: 0.9;
+  border-radius: 10px;
 }
 .close_boxComment {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 95%;
+  top: 5%;
+}
+#login_click{
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
   position: relative;
-  left: -140px;
+  /*向左向上偏移50%*/
+  transform: translate(-50%, -50%);
+  background-color: darkorange;
+  border-radius: 40px;
+  width: 80px;
+  text-align: center;
+}
+.input-normal{
+  width: 220px;
+height: 38px;
+margin: 30px auto;
+padding: 0;
+text-align: center;
+border-radius: 20px;
+outline: none;
+display: block;
+transition: 0.3s;
+border: 1px solid #e6e6e6;
+opacity: 1;
+}
+.btn-primary{
+  width: 100px;
+height: 36px;
+margin: auto;
+font-size: 18px;
+text-align: center;
+color: white;
+border-radius: 20px;
+display: block;
+background: darkorange;
+transition: 0.3s;
+opacity: 1;
+}
+.input-post-title{
+  width: 400px;
+height: 30px;
+margin: 30px auto;
+padding: 0;
+text-align: center;
+border-radius: 5px;
+outline: none;
+display: block;
+transition: 0.3s;
+border: 1px solid #e6e6e6;
+opacity: 1;
+}
+.input-post-content{
+  margin: 5px auto;
+  width: 500px;
+height: 300px;
+padding: 0;
+border-radius: 5px;
+outline: none;
+display: block;
+transition: 0.3s;
+border: 1px solid #e6e6e6;
+opacity: 1;
+}
+.input-comment-content{
+  margin: 5px auto;
+  width: 600px;
+height: 300px;
+padding: 0;
+text-align: center;
+border-radius: 5px;
+outline: none;
+display: block;
+transition: 0.3s;
+border: 1px solid #e6e6e6;
+opacity: 1;
 }
